@@ -375,7 +375,7 @@ jobs:
       - name: Build and push backend Docker image
         run: |
           BUILD_SHORT="${{ github.run_number }}-$(echo ${{ github.sha }} | cut -c1-7)"
-          IMAGE="ghcr.io/${{ github.repository_owner }}/ai-wildfire-risk-backend"
+          IMAGE="ghcr.io/tofutom/ai-wildfire-risk-backend"
           docker build -t "${IMAGE}:latest" -t "${IMAGE}:${BUILD_SHORT}" ./backend
           docker push "${IMAGE}:latest"
           docker push "${IMAGE}:${BUILD_SHORT}"
