@@ -114,4 +114,3 @@ npm run test:e2e
 ### CI behavior
 - GitHub Actions runs E2E on every push and pull request in a dedicated `test-e2e` job.
 - The suite is intentionally limited to five behavior-focused scenarios to reduce flake and runtime.
-
